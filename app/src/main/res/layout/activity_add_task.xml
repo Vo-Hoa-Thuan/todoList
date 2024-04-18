@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddTaskActivity">
+
+
+    <TextView
+        android:id="@+id/addTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Note"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/nameTask"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_below="@+id/addTaskHeading"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border"
+        android:hint="Enter Task Name"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/contentTask"
+        android:layout_width="match_parent"
+        android:layout_height="482dp"
+        android:layout_below="@id/nameTask"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/border"
+        android:gravity="top"
+        android:hint="Enter Task Content"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/setTimeButton"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/imageview_background"
+            app:srcCompat="@drawable/baseline_access_time_24" />
+
+        <ImageView
+            android:id="@+id/saveButton"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/imageview_background"
+            app:srcCompat="@drawable/baseline_done_24" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
